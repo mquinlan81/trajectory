@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="regstyles.css">
+  <title>Trajectory - Register</title>
+</head>
+<body>
+  <!-- First Name, Last Name, Email, Gender, Zip Code, Password, Confirm Password -->
+  <div class="form-container">
+    
+    <a href="#">
+      <img class="logo" src="media/logo/green-logo.svg" alt="">
+    </a>
+
+    <h2 class="welcome">Welcome to trajectory.golf</h2>
+
+    <p class="welcome-text">Fill out the form below and get ready to change the trajectory of your golf game!</p>
+    
+    <form action="#">
+      <div class="form-row">
+        <!-- <label for="first-name">First Name</label> -->
+        <input type="text" name="first-name" id="first-name" placeholder="First name">
+      </div>
+
+      <div class="form-row">
+        <!-- <label for="last-name">Last Name</label> -->
+        <input type="text" name="last-name" id="last-name" placeholder="Last name">
+      </div>
+
+      <div class="form-row">
+        <!-- <label for="email">Email</label> -->
+        <input type="text" name="email" id="email" placeholder="Email">
+      </div>
+
+      <div class="form-row">
+        <!-- <label for="zip-code">ZIP Code</label> -->
+        <input type="text" name="zip-code" id="zip-code" pattern="[0-9]{5}" min="5" max="5" title="Five digit ZIP code" placeholder="ZIP Code">
+      </div>
+      
+      <fieldset>
+        <legend>Gender</legend>
+        <label for="gender-1" class="radio-label">Male</label>
+        <input type="radio" name="gender" id="gender-1" value="male">
+        <label for="gender-2" class="radio-label">Female</label>
+        <input type="radio" name="gender" id="gender-2" value="female">
+      </fieldset>
+
+      <!-- <div class="form-row">
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+          <option value="male">Male</option>
+          <option value="femail">Female</option>
+        </select>
+      </div> -->
+      
+      <div class="form-row">
+        <!-- <label for="password">Password</label> -->
+        <input type="text" name="password" id="password" placeholder="Password">
+      </div>
+
+      <div class="form-row">
+        <!-- <label for="confirm-password">Confirm Password</label> -->
+        <input type="text" name="confirm-password" id="confirm-password" placeholder="Confirm password">
+      </div>
+
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+
+    </form>
+    <p>Be sure to visit your user profile to complete setup.</p>
+  </div>
+  
+</body>
+</html>
