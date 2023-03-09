@@ -10,24 +10,35 @@
   --red: #b7245c;
   --black: #1e2019;
   --white: #ffffff;
-  --shadow: #1e201930
+  --shadow: #d2d2d1;
+  --btndisable: #db92ae;
+  --btnhover: #a52053;
 }
 
 .logo {
   margin: 1rem;
-  height: 50px;
+  height: 3.5rem;
   width: auto;
 }
 
 button {
   cursor: pointer;
   background-color: var(--red);
-  padding: .75rem 1rem;
+  padding: 1rem 2rem;
   color: var(--white);
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   border: none;
   border-radius: .5rem;
+}
+
+button:hover {
+  background-color: var(--btnhover);
+  box-shadow: 0 0 .5rem var(--shadow);
+}
+
+button:disabled {
+  background-color: var(--btndisable);
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -44,13 +55,24 @@ body {
 }
 
 .form-container {
-  background-color: var(--tan);
-  padding: 1rem;
-  border-radius: 1rem;
   margin: 1rem;
-  box-shadow: 0 0 6px var(--shadow);
+  padding: 1rem;
+  background-color: var(--tan);
+  /* border: 1px solid black; */
+  border-radius: .5rem;
+  box-shadow: 0 0 .5rem var(--shadow);
 }
 
+
+.logo-link {
+  display: flex;
+  justify-content: space-around;
+}
+
+form {
+  max-width: 350px;
+  margin: auto;
+}
 
 .form-row {
   display: flex;
@@ -58,3 +80,69 @@ body {
   margin: 1rem 0;
 }
 
+input {
+  height: 2.5rem;
+  border: 1px solid var(--shadow);
+  border-radius: .5rem;
+  padding-left: .5rem;
+}
+
+input:focus {
+  outline-color: var(--blue);
+}
+
+input:invalid {
+  color: var(--red);
+  border: 1px solid var(--red);
+}
+
+input:valid {
+  border: 1px solid var(--green);
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  color: var(--black);
+  font-size: 0.75rem;
+}
+
+fieldset label{
+  margin-right: .5rem;
+}
+
+.fieldset-div {
+  display: flex;
+}
+
+::placeholder {
+  color: var(--black);
+  opacity: .5;
+}
+
+.radio-div {
+  display: flex;
+  align-items: center;
+  width: 4.75rem;
+}
+
+.policies {
+  color: #777;
+  font-size: 0.75rem;
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 600px) {
+  .registration-page {
+    display: flex;
+    background-image: url(media/images/courtney-cook-h7aVq-7FfPw-unsplash.jpg);
+    background-size: cover;
+    height: 100vh;
+    justify-content: flex-end;
+  }
+  .form-container {
+    margin: auto calc(100vw * .22);
+  }
+}
