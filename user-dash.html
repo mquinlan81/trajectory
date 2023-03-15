@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dash-styles.css">
+  <title>Trajecory - Dashboard</title>
+</head>
+<body>
+  <div class="main-grid-container" id="main-grid-container">
+
+    <div class="sidebar">
+
+      <div class="logo-link">
+        <a href="#">
+          <img class="logo" src="media/logo/tan-logo.svg" alt="">
+        </a>
+      </div>
+
+      <div class="user-options" id="user-options">
+        <div class="dash-link user-options" id="user-options">
+          <img src="media/icons/home-tan.svg" class="icon" alt="User home">
+          <h3 class="home" id="home">Home</h3>
+        </div>  
+        <div class="dash-link user-options" id="user-options">
+          <img src="media/icons/profile-tan.svg" class="icon" alt="User profile">
+          <h3 class="profile" id="profile">Profile</h3>
+        </div>  
+        <div class="dash-link user-options" id="user-options">
+          <img src="media/icons/message-tan.svg" class="icon" alt="User messages">
+          <h3 class="messages" id="messages">Messages</h3>
+        </div>  
+        <div class="dash-link user-options" id="user-options">
+          <img src="media/icons/history-tan.svg" class="icon" alt="User history">
+          <h3 class="history" id="history">History</h3>
+        </div>  
+        <div class="dash-link user-options" id="user-options">
+          <img src="media/icons/task-tan.svg" class="icon" alt="User tasks">
+          <h3 class="tasks" id="tasks">Tasks</h3>
+        </div>  
+        <div class="dash-link user-options" id="user-options">
+          <img src="media/icons/community-tan.svg" class="icon" alt="User community">
+          <h3 class="community" id="community">Community</h3>
+        </div>  
+      </div>  
+      
+      <div class="preferences" id="preferences">
+        <div class="dash-link preferences" id="preferences">
+          <img src="media/icons/cog-tan.svg" class="icon" alt="Settings">
+          <h3 class="settings" id="settings">Settings</h3>
+        </div>  
+        <div class="dash-link preferences" id="preferences">
+          <img src="media/icons/support-tan.svg" class="icon" alt="Support">
+          <h3 class="support" id="support">Support</h3>
+        </div>  
+        <div class="dash-link preferences" id="preferences">
+          <img src="media/icons/privacy-tan.svg" class="icon" alt="Privacy">
+          <h3 class="privacy" id="privacy">Privacy</h3>
+        </div>  
+      </div>
+    </div>
+
+    <div class="app-controls" id="app-controls">
+
+      <div class="search" id="search">
+        <label for="search">
+          <input type="text" name="search" id="search" placeholder="search...">
+          <button class="search-btn"><img src="media/icons/search-green.svg" alt="Search" class="search-icon"></button>
+        </label>
+      </div>
+
+      <div class="user-info" id="user-info">
+        <img src="media/images/tim-mossholder-tq8Cuap8_wY-unsplash.jpg" alt="User image">
+        <span class="page-username" id="username">John Smith (@jsmith)</span>
+      </div>
+
+      <div class="user-welcome" id="user-welcome">
+        <img src="media/images/tim-mossholder-tq8Cuap8_wY-unsplash.jpg" alt="User image">
+        <span class="welcome-note" id="welcome-note">Hi there,</span>
+        <span class="welcome-username" id="username">John Smith (@jsmith)</span>
+      </div>
+
+      <div class="controls" id="controls">
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+      </div>
+    </div>
+
+<!-- Card Interface -->
+    <div class="card-interface" id="card-interface">
+
+        <h4 class="projects">Your Projects</h4>
+
+        <h4 class="announcements" id="announcements">Announcements</h4>
+        
+
+        <div class="projects-container" id="projects-container">
+          <div class="card" id="card">
+            <h4 class="card-title" id="card-title">Card #1</h4>
+            <p class="card-text" id="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at tellus elementum, porta augue nec, pharetra enim. Quisque placerat rutrum urna, dapibus rutrum sem tincidunt vehicula. Aliquam ultrices maximus maximus. Etiam enim nulla, condimentum id nisi sed, vulputate porta turpis
+            </p>
+            <div class="card-controls" id="card-controls">
+              <img src="media/icons/share-variant.svg" alt="share" class="card-icon">
+              <img src="media/icons/eye-plus-outline.svg" alt="view" class="card-icon">
+              <img src="media/icons/star-outline.svg" alt="Mark as favorite" class="card-icon">
+            </div>
+          </div>
+          <div class="card" id="card">
+            <h4 class="card-title" id="card-title">Card #1</h4>
+            <p class="card-text" id="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at tellus elementum, porta augue nec, pharetra enim. Quisque placerat rutrum urna, dapibus rutrum sem tincidunt vehicula. Aliquam ultrices maximus maximus. Etiam enim nulla, condimentum id nisi sed, vulputate porta turpis
+            </p>
+            <div class="card-controls" id="card-controls">
+              <img src="media/icons/share-variant.svg" alt="share" class="card-icon">
+              <img src="media/icons/eye-plus-outline.svg" alt="view" class="card-icon">
+              <img src="media/icons/star-outline.svg" alt="Mark as favorite" class="card-icon">
+            </div>
+          </div>
+          <div class="card" id="card">
+            <h4 class="card-title" id="card-title">Card #1</h4>
+            <p class="card-text" id="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at tellus elementum, porta augue nec, pharetra enim. Quisque placerat rutrum urna, dapibus rutrum sem tincidunt vehicula. Aliquam ultrices maximus maximus. Etiam enim nulla, condimentum id nisi sed, vulputate porta turpis
+            </p>
+            <div class="card-controls" id="card-controls">
+              <img src="media/icons/share-variant.svg" alt="share" class="card-icon">
+              <img src="media/icons/eye-plus-outline.svg" alt="view" class="card-icon">
+              <img src="media/icons/star-outline.svg" alt="Mark as favorite" class="card-icon">
+            </div>
+          </div>
+          <div class="card" id="card">
+            <h4 class="card-title" id="card-title">Card #1</h4>
+            <p class="card-text" id="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at tellus elementum, porta augue nec, pharetra enim. Quisque placerat rutrum urna, dapibus rutrum sem tincidunt vehicula. Aliquam ultrices maximus maximus. Etiam enim nulla, condimentum id nisi sed, vulputate porta turpis
+            </p>
+            <div class="card-controls" id="card-controls">
+              <img src="media/icons/share-variant.svg" alt="share" class="card-icon">
+              <img src="media/icons/eye-plus-outline.svg" alt="view" class="card-icon">
+              <img src="media/icons/star-outline.svg" alt="Mark as favorite" class="card-icon">
+            </div>
+          </div>
+      </div>
+
+      <!-- <div class="right-side-container" id="right-side-container"> -->
+
+
+
+        <div class="announce-card status-card" id="announce-card">
+          <div class="update" id="update">
+            <p class="announcement-title">Heading 1</p>
+            <p class="announcement-text">Cras diam urna, egestas a ultrices in, convallis nec erat. Sed sollicitudin sem libero, a dignissim dui elementum at. Nam justo ex, blandit et aliquam at, porta eget nunc.</p>
+          </div>
+          <hr />
+          <div class="update" id="update">
+            <p class="announcement-title">Heading 1</p>
+            <p class="announcement-text">Cras diam urna, egestas a ultrices in, convallis nec erat. Sed sollicitudin sem libero, a dignissim dui elementum at. Nam justo ex, blandit et aliquam at, porta eget nunc.</p>
+          </div>
+          <hr />
+          <div class="update" id="update">
+            <p class="announcement-title">Heading 1</p>
+            <p class="announcement-text">Cras diam urna, egestas a ultrices in, convallis nec erat. Sed sollicitudin sem libero, a dignissim dui elementum at. Nam justo ex, blandit et aliquam at, porta eget nunc.</p>
+          </div> 
+        </div> 
+  
+        <h4 class="trending" id="trending">Trending</h4>
+        <div class="trending-container" id="trending-container">
+          <div class="trending-card status-card" id="trending-card">
+            <div class="trend-user" id="trend-user">
+              <img src="media/images/Golf Pro Teaching.jpg" alt="golfers" class="treding-img">
+              <span>@username1</span>
+              <span>User Name 1</span>
+            </div>
+            <div class="trend-user" id="trend-user">
+              <img src="media/images/Golf Pro Teaching.jpg" alt="golfers" class="treding-img">
+              <span>@username1</span>
+              <span>User Name 1</span>
+            </div>
+            <div class="trend-user" id="trend-user">
+              <img src="media/images/Golf Pro Teaching.jpg" alt="golfers" class="treding-img">
+              <span>@username1</span>
+              <span>User Name 1</span>
+            </div>
+            <div class="trend-user" id="trend-user">
+              <img src="media/images/Golf Pro Teaching.jpg" alt="golfers" class="treding-img">
+              <span>@username1</span>
+              <span>User Name 1</span>
+            </div>
+          </div>
+        </div>
+      <!-- </div> -->
+
+    </div>
+  </div>
+</body>
+</html>

@@ -146,3 +146,9 @@ fieldset label{
     margin: auto calc(100vw * .22);
   }
 }
+
+.icon {
+  fill: var(--tan);
+  height: 16px;
+  width: auto;
+}
